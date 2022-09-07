@@ -1,0 +1,9 @@
+body {
+    background-color: #4d2b17;
+}
+
+#myCanvas {
+    width: 1000;
+    height: 1000;
+    background-color: #BFCDD9;
+}

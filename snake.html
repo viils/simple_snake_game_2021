@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel = "stylesheet" href = "snakeStyle.css"/>
+        <title> Snake game </title>
+    </head>
+    <body>
+        <header> <h1> SNAKE GAME </h1></header>
+        <table>
+            <tr>
+                <th>
+                    <canvas id="myCanvas" width="590" height="590" style="border:1px solid black" >
+                    </canvas> 
+                </th>
+                <th>
+                    <table width ="250">
+                        <tr> 
+                            <th id="button Row"> 
+                                <button type="button" id="playButton"> Play </button>
+                                <button type="button" id="resetButton"> Reset </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th id="high score div">
+                                <p id="high score text"> The high score is 0 </p>
+                                <p id="current score text"></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th id="guide">
+                                <p> Play the game by pressing the "Play"-button. Controll the snake with W (up), A (left), S (down) and D (right) keys. Try to eat as many fruits as possible without hitting the borders or snakes tail. </p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th id="speed selector">
+                                <button type="button" id="slowSpeed"> Slow </button>
+                                <button type="button" id="mediumSpeed"> Medium </button>
+                                <button type="button" id="fastSpeed"> Fast </button>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+        </table>
+        <p id="test text"></p>
+        <p id="second text"></p>
+        <img src="snakeHead.gif" alt="Pic of snakes head" id="headPicL">
+        <img src="snakeHeadR.gif" alt="Pic of snakes head" id="headPicR">
+        <img src="snakeHeadU.gif" alt="Pic of snakes head" id="headPicU">
+        <img src="snakeHeadD.gif" alt="Pic of snakes head" id="headPicD">
+        <img src="snakeBody.gif" alt="Pic of snakes body" id="bodyPic">
+        <img src="snakeFruit.gif" alt="Pic of fruit" id="fruitPic">
+    </body>
+    <script src="snake.js"></script>
+</html>
